@@ -4,8 +4,8 @@ const catalogue = [
   { title: "Dracula", author: "Bram Stoker", quantity: 0},
   { title: "Between the Assassinations", author: "Aravind Adiga", quantity: 9},
   { title: "Wolf Hall", author: "Hilary Mantel", quantity: 33},
-  { title: "Bring Up The Bodies", author: "Hilary Mantel", qunatity: 31},
-  { title: "A Place of Greater Safety", author: "Hilary Mantel", qunatity: 11},
+  { title: "Bring Up The Bodies", author: "Hilary Mantel", quantity: 31},
+  { title: "A Place of Greater Safety", author: "Hilary Mantel", quantity: 11},
   { title: "Giving Up the Ghost", author: "Hilary Mantel", quantity: 8},
   { title: "The Assassination of Margaret Thatcher", author: "Hilary Mantel", quantity: 43},
   { title: "The Yellow Wallpaper", author: "Charlotte Perkins Gilman", quantity: 12},
@@ -62,13 +62,11 @@ function checkBookByTitle(title) {
     });
     return count
   }
-  
 
 function getQuantity(title) {
-    for(let i =0; i < catalogue.length; i++){
-      if (catalogue[i].title == title){
-      return catalogue.quantity;
-      }
+  for(let i =0; i < catalogue.length; i++){
+    if (catalogue[i].title == title){
+    return catalogue[i].quantity;}
     }
 }
 
