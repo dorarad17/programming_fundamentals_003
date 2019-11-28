@@ -71,8 +71,13 @@ function getQuantity(title) {
 }
 
 function getBooksByAuthor(author) {
-  // Your code here
-}
+  let booksFound = []
+  catalogue.forEach(function(book){
+    if (book.author == author){
+    booksFound.push(book)}
+    }
+  )
+  return booksFound}
 
 function checkQuantity(title, quantity) {
   // Your code here

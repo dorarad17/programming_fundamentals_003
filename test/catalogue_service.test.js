@@ -39,5 +39,15 @@ describe("catalogueService", () => {
       });
     });
 
+    describe("catalogueService.getBooksByAuthor", () => {
+      test("returns an array of books based on the author", () => {
+        expect(catalogueService.getBooksByAuthor("Robert Bolaño")).toEqual([
+          { title: "2666", author: "Robert Bolaño", quantity: 17 },
+          { title: "By Night In Chile", author: "Robert Bolaño", quantity: 8 }
+        ]);
+      });
+    });
+
+    
 
     
