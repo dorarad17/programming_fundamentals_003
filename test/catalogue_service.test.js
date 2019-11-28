@@ -48,6 +48,10 @@ describe("catalogueService", () => {
       });
     });
 
-    
+    describe("catalogueService.checkQuantity", () => {
+      test("checks if the quantity entered of a title is true or false", () => {
+        expect(catalogueService.checkQuantity("By Night In Chile",8)).toBe(true);
+      });
+    });
 
     
